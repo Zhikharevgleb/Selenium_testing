@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 
 # Укажите путь к вашему драйверу и браузеру
 chrome_driver_path = "C:/Users/zhikh/Desktop/Программинг/Для портфолио QA/chromedriver-win64/chromedriver.exe"  # Путь к ChromeDriver
-chrome_binary_path = "C:/Users/zhikh/Desktop/Программинг/Для портфолио QA/chrome-win64/chrome.exe"  # Путь к браузеру Chrome
+chrome_binary_path = "C:/Program Files/Google/Chrome/Application/chrome.exe"  # Путь к браузеру Chrome
 
 # Настройка опций Chrome
 options = Options()
@@ -17,7 +17,7 @@ options = Options()
 # # Отключение кеширования
 # options.add_argument("--disable-cash") 
 # options.add_argument("--ignore-certificate-errors") - игнорирование ошибки сертификата    
-options.add_argument("--window-size=1920,1800") 
+options.add_argument("--window-size=1240,720") 
 options.binary_location = chrome_binary_path  # Указываем путь к браузеру
 options.page_load_strategy = 'eager'  
 
@@ -54,4 +54,4 @@ print(">>>>>", login.get_attribute("value"), "<<<<<<")
 # time.sleep(3)  
 
 # # Закрытие браузера
-# driver.quit()
+# driver.quit()z
